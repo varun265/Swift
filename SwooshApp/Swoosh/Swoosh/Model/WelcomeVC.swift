@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WelcomeVC: UIViewController {
 
    
     @IBOutlet weak var bgImg: UIImageView!
@@ -25,11 +25,11 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction func unwindFromSkillVC(unwindSegue : UIStoryboardSegue)
-    {
-            
-    }
     
+    @IBAction func unwindFromLeagueVC(unwindSegue: UIStoryboardSegue)
+    {
+        
+    }
 
 
 }

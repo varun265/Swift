@@ -17,10 +17,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,7 +70,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1R6-YT-bgW" kind="show" id="QZS-SX-ffL"/>
+                                    <segue destination="1R6-YT-bgW" kind="show" identifier="" id="QZS-SX-ffL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="Me5-OC-cxZ">
             <objects>
-                <viewController id="1R6-YT-bgW" sceneMemberID="viewController">
+                <viewController id="1R6-YT-bgW" customClass="LeagueVC" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xlD-fS-BdE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,7 +124,8 @@
                                 </constraints>
                                 <state key="normal" image="backButton"/>
                                 <connections>
-                                    <segue destination="lIl-I9-pEF" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="cJp-ud-P2K"/>
+                                    <action selector="onBackTappep:" destination="1R6-YT-bgW" eventType="touchUpInside" id="H77-pu-zxs"/>
+                                    <segue destination="lIl-I9-pEF" kind="unwind" identifier="unwindFromLeagueVC" unwindAction="unwindFromLeagueVCWithUnwindSegue:" id="4aC-kk-Dh1"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="9f3-Lr-yMn">
@@ -195,7 +196,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xhj-Qw-NkK" kind="show" id="V2V-sN-WmZ"/>
+                                    <action selector="onNextTapped:" destination="1R6-YT-bgW" eventType="touchUpInside" id="3tz-G7-IiM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -220,16 +221,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5QW-A4-wfV"/>
                     </view>
+                    <connections>
+                        <segue destination="xhj-Qw-NkK" kind="show" identifier="SkillVCSegue" id="kPl-ud-Be4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qTb-9W-T1K" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="lIl-I9-pEF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="810.39999999999998" y="129.98500749625188"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="Grs-jl-20J">
             <objects>
-                <viewController id="xhj-Qw-NkK" sceneMemberID="viewController">
+                <viewController id="xhj-Qw-NkK" customClass="SkillVC" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YbM-GS-osR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -286,6 +290,9 @@
                                 <state key="normal" title="Finish">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onFinishClicked:" destination="xhj-Qw-NkK" eventType="touchUpInside" id="xnf-08-eaT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -306,6 +313,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6fn-59-xma"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="ShowStartVCSegue" id="hQM-gr-nSf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8j6-a7-qlp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
