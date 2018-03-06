@@ -159,6 +159,9 @@
                                         <state key="normal" title="Men">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMenTap:" destination="1R6-YT-bgW" eventType="touchUpInside" id="Fi1-h1-o8j"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPN-6F-GmR" customClass="BorderButton" customModule="Swoosh">
                                         <rect key="frame" x="0.0" y="61" width="335" height="44"/>
@@ -170,6 +173,9 @@
                                         <state key="normal" title="Women">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomenTap:" destination="1R6-YT-bgW" eventType="touchUpInside" id="s9t-Qm-Bp9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9e-Dh-5wZ" customClass="BorderButton" customModule="Swoosh">
                                         <rect key="frame" x="0.0" y="122" width="335" height="44"/>
@@ -181,10 +187,13 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoEdTap:" destination="1R6-YT-bgW" eventType="touchUpInside" id="2ZS-dG-ksd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgY-Gb-YYz" customClass="BorderButton" customModule="Swoosh">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgY-Gb-YYz" customClass="BorderButton" customModule="Swoosh">
                                 <rect key="frame" x="10" y="599" width="355" height="48"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40290560790000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -222,6 +231,7 @@
                         <viewLayoutGuide key="safeArea" id="5QW-A4-wfV"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="JgY-Gb-YYz" id="8Pj-BY-GyO"/>
                         <segue destination="xhj-Qw-NkK" kind="show" identifier="SkillVCSegue" id="kPl-ud-Be4"/>
                     </connections>
                 </viewController>

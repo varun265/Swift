@@ -15,6 +15,7 @@
 		A7199F2F203976CE00A4F6A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7199F2E203976CE00A4F6A2 /* Assets.xcassets */; };
 		A7199F32203976CE00A4F6A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7199F30203976CE00A4F6A2 /* LaunchScreen.storyboard */; };
 		A7199F3B20397BBA00A4F6A2 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7199F3A20397BBA00A4F6A2 /* BorderButton.swift */; };
+		A7AFC853204D560C0006D803 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AFC852204D560C0006D803 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A7199F31203976CE00A4F6A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7199F33203976CE00A4F6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7199F3A20397BBA00A4F6A2 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		A7AFC852204D560C0006D803 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +46,7 @@
 		A7004FB820425B50005D986A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A7199F29203976CE00A4F6A2 /* WelcomeVC.swift */,
-				A7004FBA20425C08005D986A /* LeagueVC.swift */,
-				A7004FBC20425C18005D986A /* SkillVC.swift */,
+				A7AFC852204D560C0006D803 /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -54,6 +54,9 @@
 		A7004FB920425B59005D986A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A7199F29203976CE00A4F6A2 /* WelcomeVC.swift */,
+				A7004FBA20425C08005D986A /* LeagueVC.swift */,
+				A7004FBC20425C18005D986A /* SkillVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				A7004FBB20425C08005D986A /* LeagueVC.swift in Sources */,
 				A7199F28203976CE00A4F6A2 /* AppDelegate.swift in Sources */,
 				A7004FBD20425C18005D986A /* SkillVC.swift in Sources */,
+				A7AFC853204D560C0006D803 /* Player.swift in Sources */,
 				A7199F3B20397BBA00A4F6A2 /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
